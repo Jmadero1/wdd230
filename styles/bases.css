@@ -1,0 +1,152 @@
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif; /* Usar Google Font Roboto */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Color de texto oscuro */
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif; /* Usar Google Font Open Sans para los encabezados */
+    color: #444; /* Color de texto ligeramente más oscuro para los encabezados */
+}
+
+/* Esquema de colores */
+body {
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+header {
+    background-color: #01497c; /* Fondo azul oscuro */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 150px; /* Altura del encabezado */
+    text-align: center;
+    display: flex; /* Utilizamos flexbox para centrar verticalmente */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    font-size: 50px;
+    color: #fff;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    box-shadow: #1d3557;
+}
+
+nav {
+    background-color: #01060a;
+    margin: 0;
+    max-width: 100%; /* Ajuste para que ocupe todo el ancho */
+    margin-top: -20px; /* Margen superior negativo para compensar el margen inferior del header */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex; /* Modificado para flexbox */
+}
+nav ul li {
+    flex: 1 1 25%; /* Cada elemento ocupa el 25% del espacio */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+nav ul li:hover {
+    background-color: #8B4513; /* Color marrón al pasar el cursor */
+}
+
+nav li {
+    flex: 1 1 25%; /* Cada elemento ocupa el 25% del espacio */
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Modificado para subrayado */
+}
+
+.active {
+    color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    nav ul li {
+        flex: 1 1 auto; /* Cambiamos la propiedad flex */
+    }
+}
+
+
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    grid-column: span 2; /* El h1 ocupa ambas columnas */
+    border-bottom: solid black 2px;
+}
+
+.background {
+    color: #fff;
+    background-color: #01497c;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    box-shadow: 0px 0px 10px rgba(233, 51, 51, 0.1);
+}
+
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px rgba(233, 51, 51, 0.1);
+}
+
+.left-section,
+.right-section {
+    grid-row: auto; /* Reinicia la posición de las secciones */
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #01497c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    height: 150px;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+/* Estilos adicionales para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; /* Cambiamos a una sola columna */
+        grid-template-rows: auto auto; /* Dos filas */
+        grid-gap: 20px; /* Utilizamos una sola propiedad para el espacio entre celdas */
+    }
+    
+    .card {
+        grid-column: 1; /* Ocupa toda la única columna */
+    }
+}

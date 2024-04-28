@@ -1,30 +1,28 @@
-/* Typography */
 body {
-    font-family: 'Roboto', sans-serif; /* Usar Google Font Roboto */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #333; /* Color de texto oscuro */
+    color: #333;
 }
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif; /* Usar Google Font Open Sans para los encabezados */
-    color: #444; /* Color de texto ligeramente más oscuro para los encabezados */
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
 }
 
-/* Esquema de colores */
 body {
-    background-color: #f9f9f9; /* Fondo gris claro */
+    background-color: #f9f9f9;
 }
 header {
-    background-color: #01497c; /* Fondo azul oscuro */
+    background-color: #01497c;
     padding: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    height: 150px; /* Altura del encabezado */
+    height: 150px;
     text-align: center;
-    display: flex; /* Utilizamos flexbox para centrar verticalmente */
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center; /* Centramos verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 50px;
     color: #fff;
 }
@@ -34,31 +32,31 @@ img {
     height: 150px;
     padding: 10px 10px;
     border-radius: 50px;
-    box-shadow: #1d3557;
 }
 
 nav {
     background-color: #01060a;
     margin: 0;
-    max-width: 100%; /* Ajuste para que ocupe todo el ancho */
-    margin-top: -20px; /* Margen superior negativo para compensar el margen inferior del header */
+    max-width: 100%;
+    margin-top: -20px;
 }
 
 nav ul {
     list-style-type: none;
-    display: flex; /* Modificado para flexbox */
+    display: flex;
 }
+
 nav ul li {
-    flex: 1 1 25%; /* Cada elemento ocupa el 25% del espacio */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    flex: 1 1 25%;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li:hover {
-    background-color: #8B4513; /* Color marrón al pasar el cursor */
+    background-color: #8B4513;
 }
 
 nav li {
-    flex: 1 1 25%; /* Cada elemento ocupa el 25% del espacio */
+    flex: 1 1 25%;
 }
 
 nav a {
@@ -70,21 +68,18 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline; /* Modificado para subrayado */
+    text-decoration: underline;
 }
 
 .active {
     color: yellow;
 }
 
-/* Larger Views ******************************/
 @media (min-width: 640px) {
     nav ul li {
-        flex: 1 1 auto; /* Cambiamos la propiedad flex */
+        flex: 1 1 auto;
     }
 }
-
-
 
 main {
     max-width: 960px;
@@ -93,7 +88,7 @@ main {
 }
 
 h1 {
-    grid-column: span 2; /* El h1 ocupa ambas columnas */
+    grid-column: span 2;
     border-bottom: solid black 2px;
 }
 
@@ -119,9 +114,8 @@ h1 {
 
 .left-section,
 .right-section {
-    grid-row: auto; /* Reinicia la posición de las secciones */
+    grid-row: auto;
 }
-
 
 footer {
     color: white;
@@ -137,16 +131,15 @@ footer {
     color: yellow;
 }
 
-/* Estilos adicionales para pantallas más pequeñas */
 @media (max-width: 767px) {
     .container {
         display: grid;
-        grid-template-columns: 1fr; /* Cambiamos a una sola columna */
-        grid-template-rows: auto auto; /* Dos filas */
-        grid-gap: 20px; /* Utilizamos una sola propiedad para el espacio entre celdas */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
     }
     
     .card {
-        grid-column: 1; /* Ocupa toda la única columna */
+        grid-column: 1;
     }
 }

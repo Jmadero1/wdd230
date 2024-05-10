@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-image: url('../images/mar-del-plata.jpg');
+    background-image: url('../../learning-activity/images/mar-del-plata.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px 20px;

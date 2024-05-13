@@ -44,6 +44,16 @@
     </nav>
     
     <main class="container">
+        <div class="hero">
+        <picture>
+            <source srcset="images/temple-mobile.webp" media="(min-width: 961px)">
+            <source srcset="images/temple-mobile.webp" media="(max-width: 960px)">
+            <img src="images/temple-mobile.webp" alt="Imagen del Templo" class="hero-image">
+        </picture>
+        <div class="herolabel">
+			<p>Barranquilla colombia Temple</p>
+		</div>
+    </div>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card left-section">
             <h2 class="background">Learning Activities</h2>
@@ -71,8 +81,16 @@
             <p>Number of visits: 100</p>
         </section>
     </main>
-    
+    <iframe 
+        data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.915847092361!2d-122.0838515846814!3d37.38605197983396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b793c7fbc7%3A0x4c36a7f1d6d02d6b!2sGoogleplex!5e0!3m2!1ses!2sus!4v1614041023642!5m2!1ses!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        class="lazy">
+    </iframe>
     <footer>
+        
         <p>&copy; <span id="currentYear"></span> Jesus Madero, Argentina</p>
         <p id="lastModified"></p>
     </footer>

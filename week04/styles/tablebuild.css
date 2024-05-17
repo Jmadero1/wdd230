@@ -1,0 +1,26 @@
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+th, td {
+    border: 1px solid #1a1818;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #3a3535;
+    color: #ffffff;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
